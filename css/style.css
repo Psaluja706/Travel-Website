@@ -1,0 +1,439 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+h1{
+    font-size: 4rem;
+    color: white;
+    }
+    h2{
+        font-size: 1.5rem;
+        color: black;
+        font-weight: bold;
+        margin: 20px 0 15px 0;
+        line-height: 0.8;
+        word-spacing: 4px;
+    }
+    
+.header{
+background-image: linear-gradient(rgba(0,168,255, 0.3),rgba(0,168,255, 0.3)),url(../images/1.jpg);
+background-size: 100% 100%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+width: 100%;
+height: 100vh;
+clip-path: polygon(50% 0%, 100% 0, 100% 70%, 50% 100%, 0 71%, 0 0);
+position: relative;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right,#1e5799 0%,#3ccdbb 0%,#16c9f6 100%);
+    z-index: -1;
+    opacity: 0.3;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right,#1e5799 0%,#3ccdbb 0%,#16c9f6 100%);
+    z-index: -1;
+    opacity: 0.3;
+}
+.navbar-toggler-icon{
+    color: black !important;
+}
+.nav-item a{
+    color: white!important;
+    font-weight: bold;
+}
+.center-div{
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.headtext{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.headtext p{
+    
+        font-size: 1.5rem;
+        color: white;
+        line-height: 1.6;
+        padding: 10px 0 12px 0;
+       
+}
+
+.bore{
+    border: 1px solid white;
+    color: black;
+    margin: 0 15px;
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+.bore:hover{
+    background: transparent;
+    color: white;
+    border: 2px solid black;
+    box-shadow: 0 2px 5px  black;
+}
+.extradiv{
+width: 100%;
+height: auto;
+margin: 65px 0;
+text-align: center;
+}
+.extra-block{
+    background: white;
+    border: medium none;
+    padding: 50px!important;
+    border-radius: 3px;
+    transition: 0.3s;
+
+}
+.extra-block p{
+    color: rgb(65, 62, 62)!important;
+    font-size: 1rem;
+    line-break: 1.1;
+}
+
+.extra-block:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform:translateY(-20px);
+}
+.services h1{
+    color: black!important;
+    font-size: 2rem;
+}
+.services,.client-info{
+    background:#f7f7f9 ;
+    padding: 50px 0;
+    margin-bottom: 50px!important;
+}
+.names h2{
+    color: #2e2e2e;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.w-60{
+    width: 315px;
+    height: 12px;
+}
+.service-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pricing{
+    width: 100%;
+    height: 100vh;
+    padding: 50px!important;
+    position: relative;
+}
+.pricing::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(to right,#1e5799 0%,#3ccdbb 0%,#16c9f6 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 19%, 0% 100%);
+}
+.paisa{
+    font-size: 40px;
+    line-height: 1.1rem;
+    color: #606060;
+}
+.card{
+    transition: 0.3s ease;
+}
+.card-header{
+    font-size: 2rem;
+    font-weight: 600;
+    background: white!important;
+    padding: 25px 0 !important;
+}
+.pricing h2{
+    font-size: 2.2rem;
+    margin-bottom: 51px;
+}
+.pricing h2:hover{
+    color: black!important;
+    font-size: 2.4rem;
+}
+.card-body{
+    padding: 30px 0px !important;
+}
+.card-body li{
+    margin: 10px 0px !important;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;
+}
+.card-footer{
+    background: white;
+    padding: 25px 0 !important;
+}
+.card-footer a{
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    color: #50d1c0;
+    line-height: 1.4;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+}
+.card:hover .card-footer a{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    color: white;
+    background: #50d1c0;
+    text-decoration: none;
+}
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.card:hover .paisa,.card:hover .card-header{
+    color: #50d1c0;
+}
+.pictures{
+    padding: 50px 0 !important;
+    width: 100%;
+    height: 100vh;
+}
+.box{
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0 , 0.2);
+    border-radius: 2px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0 , 0.3);
+    transition: 0.3s ease;
+}
+.box:hover{
+    background-color: #16c9f6;
+    color: white;
+    cursor: pointer;
+}
+.carousel-indicators{
+    position: absolute;
+    right: 0;
+    bottom: -75px !important;
+}
+.carousel-indicators li{
+    background-color: #16c9f6 !important;
+}
+.pictures h1{
+    color: black!important;
+    font-size: 2rem;
+}
+.contact h1{
+    color: black!important;
+    font-size: 2rem;
+}
+.contact{
+    width: 100%;
+    height: 80vh;
+    padding: 50px 0;
+    position: relative;
+}
+.contact::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #16c9f6;
+    clip-path: polygon(0 84%, 100% 6%, 100% 100%, 0% 100%);
+    z-index: -1;   
+}
+.form-btn button{
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    color: #50d1c0;
+    line-height: 1.4;
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    background: transparent;
+}
+form:hover .form-btn button{
+    color: #50d1c0;
+    background-color: white;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+::placeholder{
+    font-size: 0.85rem;
+}
+.news h1{
+    color: black!important;
+    font-size: 2rem;
+}
+.news{
+    width: 100%;
+    height: auto;
+    margin: 80px auto;
+}
+.newss{
+    border-radius: 100px 0px 0px 100px !important;
+    min-width: 150px;
+    min-height: 45px;
+}
+.input-group-text{
+    color: white;
+    background: #50d1c0;
+    font-weight: 800;
+    border-radius: 0px 100px 100px 0px !important;
+    min-width: 130px;
+    min-height: 45px;
+}
+.last{
+    width: 100%;
+    height: auto;
+    padding: 30px 0 20px 0;
+    background: #16c9f6;
+}
+.last p{
+    color: white;
+}
+.response{
+    text-align: center;
+}
+
+.last li a{
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+}
+.last h2{
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+.cright{
+    background: black;
+    color: white;
+    padding: 8px 0px;
+}
+.cright a i{
+    color: red;
+}
+#mybtn{
+    display: none;
+    position: fixed;
+    bottom:60px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: white;
+    background: black;
+    padding: 10px !important;
+    border-radius: 10px;
+}
+#mybtn:hover{
+    background: #606060;
+}
+.cright span:hover{
+    font-size: 1.05rem;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    font-weight: 800;
+    border-bottom: 1px solid #16c9f6;
+}
+
+@media(min-width:480px) and (max-width:768px)
+{
+    .nav-item{
+        text-align: center;
+    }
+    .pricing,.pictures,.contact{
+        height: auto;
+    }
+    
+    .card-second{
+        margin: 30px 0px;
+    }
+    .contact p{
+        padding: 0 50px;
+    }
+    .response{
+        text-align: left !important;
+    }
+    .last{
+        margin: 30px 0px !important;
+    }
+}
+@media(max-width:479px)
+{
+    .nav-item{
+        text-align: center;
+    }
+    .pricing,.pictures,.contact{
+        height: auto;
+    }
+    
+    .card-second{
+        margin: 30px 0px;
+    }
+    .contact p{
+        padding: 0 50px;
+    }
+    .response{
+        text-align: left !important;
+    }
+    .last{
+        margin: 30px 0px !important;
+    }
+    .cright{
+        margin-top: -30px;
+    }
+    .headtext h1{
+        font-size: 2.2rem;
+    }
+    .headtext p{
+        font-size: 1rem;
+    }
+}
